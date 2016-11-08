@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File Metadata Service</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body>
+<h1>File Metadata Service</h1>
+<p>
+  This is a simple interface for the <emph>File Metadata API</emph> basejump project for FreeCodeCamp. <br>
+  It allows you to recieve information about files via upload to <code>url/api/upload</code>. <br>
+  <strong>Super useful. Super Awesome.</strong>
+</p>
+<form enctype="multipart/form-data" method="post" name="fileinfo" id="fileinfo">
+  <input type="text" placeholder="Your comment..." name="desc" /> <br>
+  <label>File to analyse:</label> <br>
+  <input type="file" name="file" required /> <br>
+  <input type="submit" value="Get Your Infos Here!" id="btn-submit"/>
+</form>
+<div id="resultbox">
+  Name: <span id="name"></span> <br>
+  Size: <span id="size"></span> <br>
+  Comment: <span id="comment"></span> <br>
+</div>
+</body>
+</html>
